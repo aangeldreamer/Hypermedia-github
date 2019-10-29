@@ -1,0 +1,38 @@
+.white {
+    color:white;
+}
+.gray {
+    color:#838b91;
+}
+
+.background {
+
+    color:#141516;
+}
+
+body {background-color:#141516;}
+
+header {
+    font-family:'Inconsolata', monospace;
+    font-size: 35px;
+    letter-spacing: 5px;
+  }
+
+p {
+    font-family:'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    letter-spacing: 5px;
+    }
+
+article {
+    font-family:'Playfair Display', serif;
+    font-size: 50px;
+  }
+  
+footer {
+    font-family:'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    letter-spacing: 6px;
+    }
+
+
