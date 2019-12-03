@@ -148,6 +148,7 @@ header .logo > h2 {
 .mission-statement p {
     font-weight: 200;
     text-align: center;
+
 }
 
 .mission-statement .button {
@@ -157,6 +158,25 @@ header .logo > h2 {
     align-self: center;
 }
 
+.main-content {
+
+display: flex;
+flex-direction: row;
+align-items: center;
+}
+
+@media screen and (min-width: 481px) {
+    .maincontent {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .mission-statement {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+}
 .call-to-action {
     display: flex;
     flex-direction: column;
@@ -183,6 +203,12 @@ footer nav ul > li {
     flex-direction: row;
     justify-content: center;
 }
+
+@media screen and (min-width: 481px) {
+    footer nav ul {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
 
 footer nav ul > li > a {
     display: block;
