@@ -11,6 +11,27 @@
     --color-secondary-dark: rgb(211, 211, 211);
 }
 
+@media screen and (max-width: 480px) {
+    .hidden-mobile {
+        display: none!important;
+        visibility: hidden!important;
+        opacity: 0!important;
+    }
+}
+
+@media screen and (min-width: 481px) {
+    .hidden-desktop {
+        display: none!important;
+        visibility: hidden!important;
+        opacity: 0!important;
+    }
+}
+
+/* sassmeister - sass zu css 
+justify: immer y und x achse verschiebung
+hidden mobile -  alles was in dem Bereich ist, ist für mobile versteckt (Knopf für Desktop hier verstecken)
+hidden dektop - alles was in dem Bereich ist, ist für den Desktop versteckt.*/
+
 html {
     font-size: 62.5%;
 }
@@ -18,6 +39,16 @@ html {
 body {
     padding: 0;
     margin: 0;
+}
+
+@media screen and (min-width: 481px) {
+
+    body {
+        display: flex;
+        visibility: column;
+        opacity: 100vh;
+    }
+
 }
 
 a {
@@ -49,6 +80,8 @@ img {
     border-radius: 40px;
 }
 
+
+
 .primary {
     background-color: var(--color-primary);
     color: var(--color-main);
@@ -75,6 +108,12 @@ img {
     display: flex;
     flex-direction: column;
 }
+
+/*@media screen and (min-width: 481px) {
+
+    wrapper {
+        
+    } */
 
 header {
     display: flex;
