@@ -16,6 +16,7 @@
         display: none!important;
         visibility: hidden!important;
         opacity: 0!important;
+        
     }
 }
 
@@ -24,6 +25,12 @@
         display: none!important;
         visibility: hidden!important;
         opacity: 0!important;
+        display: grid;
+        grid-template-columns: 3fr auto;
+        grid-template-rows: 3rem auto 3rem ;
+        grid-template-areas: "logo button"
+                             "img text"
+                             "footer footer";
     }
 }
 
@@ -41,18 +48,18 @@ body {
     margin: 0;
 }
 
-@media screen and (min-width: 481px) {
+/*@media screen and (min-width: 481px) {
 
     body {
         display: flex;
         visibility: column;
         opacity: 100vh;
     
-    }
+    }*/
 
-}
 
-@media screen and (max-width: 480px) {
+
+/*@media screen and (min-width: 481px) {
     body {
         display: grid;
         grid-template-columns: 3fr auto;
@@ -61,7 +68,7 @@ body {
                              "img text"
                              "footer footer";
     }
-}
+}*/
 
 a {
     font-size: 1.6rem;
@@ -84,7 +91,7 @@ img {
     width: 100%;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 481px) {
     img {
        grid-area: img;
     }
@@ -100,6 +107,9 @@ img {
 
 
 
+
+
+
 .primary {
     background-color: var(--color-primary);
     color: var(--color-main);
@@ -108,8 +118,8 @@ img {
     font-weight: 600;
 }
 
-@media screen and (max-width: 480px) {
-    button.primary {
+@media screen and (min-width: 481px) {
+    primary {
        grid-area: button;
     }
 }
@@ -156,8 +166,8 @@ header .logo > h2 {
     margin: 1rem 0 2rem 0;
 }
 
-@media screen and (max-width: 480px) {
-    header .logo {
+@media screen and (min-width: 481px) {
+    logo {
         grid-area: logo;
     }
 }
@@ -189,8 +199,8 @@ header .logo > h2 {
     align-self: center;
 }
 
-@media screen and (max-width: 480px) {
-    .mission-statement {
+@media screen and (min-width: 481px) {
+    mission-statement {
        grid-area: text;
     }
 }
@@ -202,18 +212,18 @@ flex-direction: row;
 align-items: center;
 }
 
-@media screen and (min-width: 481px) {
+/*@media screen and (min-width: 481px) {
     .maincontent {
         display: flex;
         flex-direction: row;
         align-items: center;
-    }
+    }*/
 
     .mission-statement {
         padding-left: 5rem;
         padding-right: 5rem;
     }
-}
+
 .call-to-action {
     display: flex;
     flex-direction: column;
@@ -243,7 +253,7 @@ footer nav ul > li {
     
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 481px) {
     footer {
        grid-area: footer;
     }
@@ -271,7 +281,7 @@ footer nav ul > li {
 
 */
 
-}
+
 
 footer nav ul > li > a {
     display: block;
