@@ -29,8 +29,8 @@
 
 /* sassmeister - sass zu css 
 justify: immer y und x achse verschiebung
-hidden mobile -  alles was in dem Bereich ist, ist für mobile versteckt (Knopf für Desktop hier verstecken)
-hidden dektop - alles was in dem Bereich ist, ist für den Desktop versteckt.*/
+hidden mobile - max 480 - Desktop alles was in dem Bereich ist, ist für mobile versteckt (Knopf für Desktop hier verstecken)
+hidden dektop - min 481 -MObil alles was in dem Bereich ist, ist für den Desktop versteckt.*/
 
 html {
     font-size: 62.5%;
@@ -47,8 +47,20 @@ body {
         display: flex;
         visibility: column;
         opacity: 100vh;
+    
     }
 
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        display: grid;
+        grid-template-columns: 3fr auto;
+        grid-template-rows: 3rem auto 3rem ;
+        grid-template-areas: "logo button"
+                             "img text"
+                             "footer footer";
+    }
 }
 
 a {
@@ -72,6 +84,12 @@ img {
     width: 100%;
 }
 
+@media screen and (max-width: 480px) {
+    img {
+       grid-area: img;
+    }
+}
+
 .button {
     text-decoration: none;
     font-family: var(--button-font);
@@ -88,6 +106,12 @@ img {
     padding: 1.5rem 2.5rem;
     font-size: 1.8rem;
     font-weight: 600;
+}
+
+@media screen and (max-width: 480px) {
+    button.primary {
+       grid-area: button;
+    }
 }
 
 .primary:hover {
@@ -107,6 +131,7 @@ img {
     padding: 0 1.6rem;
     display: flex;
     flex-direction: column;
+
 }
 
 /*@media screen and (min-width: 481px) {
@@ -129,6 +154,12 @@ header .logo {
 
 header .logo > h2 {
     margin: 1rem 0 2rem 0;
+}
+
+@media screen and (max-width: 480px) {
+    header .logo {
+        grid-area: logo;
+    }
 }
 
 .mission-statement {
@@ -156,6 +187,12 @@ header .logo > h2 {
     flex-direction: column;
     width: calc(100% / 3 * 2);
     align-self: center;
+}
+
+@media screen and (max-width: 480px) {
+    .mission-statement {
+       grid-area: text;
+    }
 }
 
 .main-content {
@@ -195,6 +232,7 @@ footer nav ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
+   
 }
 
 footer nav ul > li {
@@ -202,13 +240,38 @@ footer nav ul > li {
     margin: .2rem 0;
     flex-direction: row;
     justify-content: center;
+    
 }
 
-@media screen and (min-width: 481px) {
-    footer nav ul {
-        flex-direction: row;
-        justify-content: flex-end;
+@media screen and (max-width: 480px) {
+    footer {
+       grid-area: footer;
     }
+}
+
+/* @media screen and (min-width: 481px) {
+    footer nav ul {
+        flex-direction: row; 
+        justify-content: flex-end;
+        position: absolute;
+        right: 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    } /*
+
+  /*  justify-content:center; --> Mitte
+    justify-content: flex-end; --> Rechts
+    justify-content: flex-start; --> Links
+    flex-direction: row; --> waagerechter Text
+    flex-direction: column; --> vertikaler Text
+    flex-direction: row-reverse; --> Auflistung (horizontal) wird rückwerts aufgelistst (wie ein spiegel)
+    flex-direction: column-reverse; --> Auflistung (vertikal) wird rückwerts aufgelistst (wie ein spiegel)
+    flex --> in z.B. einer Spalte den Text richtig einordnen (rechts - links)
+
+*/
+
+}
 
 footer nav ul > li > a {
     display: block;
