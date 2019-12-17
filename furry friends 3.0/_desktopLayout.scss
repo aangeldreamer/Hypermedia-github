@@ -1,0 +1,166 @@
+@media only screen and (min-width: 731px) {
+
+    html {
+        font-size: 62.5%;
+        
+    }
+    
+    a {
+        font-size: 1.6rem;
+        text-decoration: none;
+    }
+    
+    p, li {
+        font-size: 1.6em;
+        font-family: $text-font;
+        line-height: calc(1.6rem * 1.6);
+    }
+    
+    h1, h2, h3, h4 {
+        color: $darkgrey;
+        font-family: $heading-font;
+        font-weight: 900;
+        color: $darkgrey;
+    }
+        
+    .groeßer{
+
+        font-size: 2.5rem;
+
+    }
+
+    .logo{
+        grid-area: logo;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 10rem;
+        @if $testen {
+        border: rgb(0, 0, 0) solid 1px;
+        }
+    }
+
+    .DonateButton{
+        grid-area: donatebutton;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-right: 1rem;
+        @if $testen {
+            border: rgb(230, 255, 2) solid 1px;}
+    }
+
+    .bild {
+        grid-area: bild;
+
+        margin-left: 1rem;
+        @if $testen {border: #000 solid 1px;}
+    }
+
+    .text {
+        grid-area: text;
+
+        padding-left: 5rem;
+        padding-right: 5rem;
+        text-align: center;
+
+        margin-right: 1rem;
+
+        @if $testen {border: rgb(252, 0, 0) solid 1px;}
+    }
+
+ 
+.button {
+    text-decoration: none;
+    font-family: $button-font;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.DonateButtondesign {
+    background-color: $yellow;
+    color: $darkgrey;
+    padding: 1rem 1rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    margin-right: 10rem;
+}
+
+.DonateButtondesign:hover {
+    background-color: $yellowdark;
+}  
+
+.buttontext {
+    background-color: $grey;
+    color: $darkgrey;
+
+    padding: 1rem 1rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
+}
+
+.buttontext:hover {
+    background-color: $greydark;
+}
+
+
+
+footer {
+
+    grid-area: footer;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    background-color: #F2F2F2;
+
+    // unten
+    // height: 3rem;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+
+    @if $testen {border: rgb(174, 0, 255) solid 1px;}
+
+}
+
+footer ul{
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-direction: row;
+
+    margin-right: 1rem;
+    padding-right: 10rem;
+
+    gap: 9rem;
+
+}
+
+.textdesignweb {
+
+    font-family: $text-font;
+    color: $darkgrey;
+}
+
+footer ul > li > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 1.7rem 0;
+    padding-right: 1rem;
+    text-align: center;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: $darkgrey;
+    font-weight: 200;
+}
+
+}

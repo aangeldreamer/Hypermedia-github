@@ -1,0 +1,169 @@
+@media only screen and (max-width: 730px) {
+
+    html {
+        font-size: 62.5%;
+        
+    }
+    
+    a {
+        font-size: 1.6rem;
+        text-decoration: none;
+    }
+    
+    p, li {
+        font-size: 1.6em;
+        font-family: $text-font;
+        line-height: calc(1.6rem * 1.6);
+    }
+    
+    h1, h2, h3, h4 {
+        color: $darkgrey;
+        font-family: $heading-font;
+        font-weight: 900;
+    }
+
+
+    .logo {
+        grid-area: logo;
+        font-size: 2.4rem;
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+    } 
+    
+    .logo > h2 {
+        margin: 1rem 0 2rem 0;
+    }
+
+
+    .DonateButton{
+        grid-area: donatebutton;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @if $testen {border: rgb(230, 255, 2) solid 1px;}
+    }
+
+    .bild {
+        grid-area: bild;
+
+        @if $testen {border: #000 solid 1px;}
+    }
+
+    .text {
+        grid-area: text;
+
+        padding-left: 5rem;
+        padding-right: 5rem;
+        text-align: center;
+
+
+        @if $testen {border: rgb(252, 0, 0) solid 1px;}
+    }
+
+
+    .button {
+        text-decoration: none;
+        font-family: $button-font;
+        padding: 1rem 1.5rem;
+        text-align: center;
+        border-radius: 40px;
+    }
+    
+    .DonateButtondesign {
+        background-color: $yellow;
+        color: $darkgrey;
+        padding: 1.5rem 2.5rem;
+        font-size: 1.8rem;
+        font-weight: 600;
+        padding-left: 15rem;
+        padding-right: 15rem;
+    }
+    
+    .DonateButtondesign:hover {
+        background-color: $yellowdark;
+    }  
+    
+    .buttontext {
+        background-color: $grey;
+        color: $darkgrey;
+    
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+    
+    .buttontext:hover {
+        background-color: $greydark;
+    }
+
+    .textdesignmobil {
+        margin: 2rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+    }
+    
+    .textdesignmobil h1 {
+        font-size: 2.1rem;
+        margin: 2rem 0 1rem 0;
+        text-align: center;
+    }
+    
+    .textdesignmobil p {
+        font-weight: 200;
+        text-align: center;
+    
+    }
+    
+    .textdesignmobil .buttontext {
+        display: inline-flex;
+        flex-direction: column;
+        width: calc(100% / 3 * 2);
+        align-self: center;
+    }
+
+    footer {
+        grid-area: footer;
+        margin: 2rem 0 0 0;
+        padding: 3rem 1.6rem;
+        background-color: $grey;
+    }
+    
+    footer ul {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+       
+    }
+    
+    footer ul > li {
+        display: flex;
+        margin: .2rem 0;
+        flex-direction: row;
+        justify-content: center;
+        
+    }
+    
+    footer ul > li > a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: .8rem 0;
+        text-align: center;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        color: $darkgrey;
+        font-weight: 200;
+    }
+
+
+
+
+
+
+
+    }

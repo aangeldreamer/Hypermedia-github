@@ -1,0 +1,392 @@
+@charset "UTF-8";
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+  -ms-grid-rows: 10vh 80vh 3vh;
+      grid-template-rows: 10vh 80vh 3vh;
+      grid-template-areas: "logo donatebutton" "bild text" "footer footer";
+  gap: 10px;
+}
+
+@media only screen and (max-width: 730px) {
+  .grid-container {
+    -ms-grid-columns: 2% 1fr 2%;
+        grid-template-columns: 2% 1fr 2%;
+    -ms-grid-rows: .1fr .1fr 1fr auto auto;
+        grid-template-rows: .1fr .1fr 1fr auto auto;
+        grid-template-areas: ". logo ." ". bild ." ". text ." ". donatebutton ." "footer footer footer";
+    gap: 1rem;
+  }
+}
+
+@media only screen and (min-width: 731px) {
+  html {
+    font-size: 62.5%;
+  }
+  a {
+    font-size: 1.6rem;
+    text-decoration: none;
+  }
+  p, li {
+    font-size: 1.6em;
+    font-family: "Roboto", sans-serif;
+    line-height: calc(1.6rem * 1.6);
+  }
+  h1, h2, h3, h4 {
+    color: #12121B;
+    font-family: "Playfair Display", serif;
+    font-weight: 900;
+    color: #12121B;
+  }
+  .groeßer {
+    font-size: 2.5rem;
+  }
+  .logo {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: logo;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 10rem;
+  }
+  .DonateButton {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: donatebutton;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 1rem;
+  }
+  .bild {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: bild;
+    margin-left: 1rem;
+  }
+  .text {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: text;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    text-align: center;
+    margin-right: 1rem;
+  }
+  .button {
+    text-decoration: none;
+    font-family: "Roboto Condensed", sans-serif;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    border-radius: 40px;
+  }
+  .DonateButtondesign {
+    background-color: #FCEE60;
+    color: #12121B;
+    padding: 1rem 1rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    margin-right: 10rem;
+  }
+  .DonateButtondesign:hover {
+    background-color: #eee14f;
+  }
+  .buttontext {
+    background-color: #F2F2F2;
+    color: #12121B;
+    padding: 1rem 1rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+  .buttontext:hover {
+    background-color: lightgray;
+  }
+  footer {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: footer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    background-color: #F2F2F2;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+  }
+  footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-right: 1rem;
+    padding-right: 10rem;
+    gap: 9rem;
+  }
+  .textdesignweb {
+    font-family: "Roboto", sans-serif;
+    color: #12121B;
+  }
+  footer ul > li > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 1.7rem 0;
+    padding-right: 0rem;
+    text-align: center;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: #12121B;
+    font-weight: 200;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  html {
+    font-size: 62.5%;
+  }
+  a {
+    font-size: 1.6rem;
+    text-decoration: none;
+  }
+  p, li {
+    font-size: 1.6em;
+    font-family: "Roboto", sans-serif;
+    line-height: calc(1.6rem * 1.6);
+  }
+  h1, h2, h3, h4 {
+    color: #12121B;
+    font-family: "Playfair Display", serif;
+    font-weight: 900;
+  }
+  .logo {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: logo;
+    font-size: 2.4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .logo > h2 {
+    margin: 1rem 0 2rem 0;
+  }
+  .DonateButton {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: donatebutton;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .bild {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: bild;
+  }
+  .text {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: text;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    text-align: center;
+  }
+  .button {
+    text-decoration: none;
+    font-family: "Roboto Condensed", sans-serif;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    border-radius: 40px;
+  }
+  .DonateButtondesign {
+    background-color: #FCEE60;
+    color: #12121B;
+    padding: 1.5rem 2.5rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding-left: 15rem;
+    padding-right: 15rem;
+  }
+  .DonateButtondesign:hover {
+    background-color: #eee14f;
+  }
+  .buttontext {
+    background-color: #F2F2F2;
+    color: #12121B;
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+  .buttontext:hover {
+    background-color: lightgray;
+  }
+  .textdesignmobil {
+    margin: 2rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    justify-items: center;
+  }
+  .textdesignmobil h1 {
+    font-size: 2.1rem;
+    margin: 2rem 0 1rem 0;
+    text-align: center;
+  }
+  .textdesignmobil p {
+    font-weight: 200;
+    text-align: center;
+  }
+  .textdesignmobil .buttontext {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: calc(100% / 3 * 2);
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  footer {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: footer;
+    margin: 2rem 0 0 0;
+    padding: 3rem 1.6rem;
+    background-color: #F2F2F2;
+  }
+  footer ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  footer ul > li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: .2rem 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer ul > li > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: .8rem 0;
+    text-align: center;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: #12121B;
+    font-weight: 200;
+  }
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.centerflex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* establish flex container */
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /* make main-axis vertical */
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* align items vertically, in this case */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* align items horizontally, in this case */
+}
+
+/*Passt bilder an gegebene größe an*/
+.img-autoresize {
+  left: -1000%;
+  right: -1000%;
+  top: -1000%;
+  bottom: -1000%;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.fill-div {
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+}
+/*# sourceMappingURL=main.css.map */

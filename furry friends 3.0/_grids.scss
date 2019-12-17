@@ -1,0 +1,9 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 10vh 80vh 3vh;
+    grid-template-areas: "logo donatebutton"
+                         "bild text"
+                         "footer footer";
+    gap: 10px;
+}

@@ -1,0 +1,70 @@
+
+// Tablet
+
+// @media only screen and (max-width: 990px) {
+
+//     .grid-container {
+//         grid-template-columns: 10% 1fr 1fr 10%;
+//         grid-template-rows: .1fr .1fr 1fr;
+//         grid-template-areas:
+//             ". TopNews TopNews ."
+//             ". NebenNews NebenNews ."
+//             ". Kategorien1 Kategorien2 .";
+//         grid-gap: 1rem;
+//     }
+// }
+
+
+@media only screen and (min-width: 731px) {
+
+
+
+
+}
+
+
+
+
+// Handy
+@media only screen and (max-width: 730px) {
+
+    .grid-container {
+        grid-template-columns: 2% 1fr 2%;
+        grid-template-rows: .1fr .1fr 1fr auto auto;
+        grid-template-areas:
+            ". logo ."
+            ". bild ."
+            ". text ."
+            ". donatebutton ."
+            "footer footer footer";
+        gap: 1rem;
+    }
+
+    
+
+}
+
+// Kleines handy
+// @media only screen and (max-width: 500px) {
+
+//     .grid-container {
+//         display: flex;
+//         /* establish flex container */
+//         flex-direction: column;
+//         /* make main-axis vertical */
+//         justify-content: center;
+//         /* align items vertically, in this case */
+//         align-items: center;
+//         /* align items horizontally, in this case */
+//         margin: 3vw;
+//         grid-template-columns: .1fr 80vw .1fr;
+//         grid-template-rows: .1fr .1fr 1fr 1fr;
+//         grid-template-areas:
+//             ". TopNews ."
+//             ". NebenNews ."
+//             ". Kategorien1 ."
+//             ". Kategorien2 .";
+//         grid-gap: 2rem;
+//     }
+
+// }

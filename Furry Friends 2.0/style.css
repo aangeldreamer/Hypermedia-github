@@ -18,6 +18,11 @@
         opacity: 0!important;
         
     }
+
+
+
+
+    
 }
 
 @media screen and (min-width: 481px) {
@@ -25,27 +30,23 @@
         display: none!important;
         visibility: hidden!important;
         opacity: 0!important;
-        display: grid;
-        grid-template-columns: 3fr auto;
-        grid-template-rows: 3rem auto 3rem ;
-        grid-template-areas: "logo button"
-                             "img text"
-                             "footer footer";
     }
 }
 
 /* sassmeister - sass zu css 
 justify: immer y und x achse verschiebung
-hidden mobile - max 480 - Desktop alles was in dem Bereich ist, ist für mobile versteckt (Knopf für Desktop hier verstecken)
-hidden dektop - min 481 -MObil alles was in dem Bereich ist, ist für den Desktop versteckt.*/
+hidden mobile -  min 481 -MObil alles was in dem Bereich ist, ist für den Desktop versteckt.)
+hidden dektop - max 480 - Desktop alles was in dem Bereich ist, ist für mobile versteckt (Knopf für Desktop hier verstecken*/
 
 html {
     font-size: 62.5%;
+    
 }
 
 body {
     padding: 0;
     margin: 0;
+    
 }
 
 /*@media screen and (min-width: 481px) {
@@ -59,7 +60,7 @@ body {
 
 
 
-/*@media screen and (min-width: 481px) {
+/* @media screen and (min-width: 481px) {
     body {
         display: grid;
         grid-template-columns: 3fr auto;
@@ -68,7 +69,7 @@ body {
                              "img text"
                              "footer footer";
     }
-}*/
+} */
 
 a {
     font-size: 1.6rem;
@@ -105,11 +106,6 @@ img {
     border-radius: 40px;
 }
 
-
-
-
-
-
 .primary {
     background-color: var(--color-primary);
     color: var(--color-main);
@@ -119,7 +115,7 @@ img {
 }
 
 @media screen and (min-width: 481px) {
-    primary {
+    .primary {
        grid-area: button;
     }
 }
@@ -144,11 +140,12 @@ img {
 
 }
 
-/*@media screen and (min-width: 481px) {
+@media screen and (min-width: 481px) {
 
-    wrapper {
-        
-    } */
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
 
 header {
     display: flex;
@@ -167,7 +164,7 @@ header .logo > h2 {
 }
 
 @media screen and (min-width: 481px) {
-    logo {
+    .logo {
         grid-area: logo;
     }
 }
@@ -200,7 +197,7 @@ header .logo > h2 {
 }
 
 @media screen and (min-width: 481px) {
-    mission-statement {
+    .mission-statement {
        grid-area: text;
     }
 }
@@ -268,7 +265,7 @@ footer nav ul > li {
         position: fixed;
         bottom: 0;
         width: 100%;
-    } /*
+    } 
 
   /*  justify-content:center; --> Mitte
     justify-content: flex-end; --> Rechts
